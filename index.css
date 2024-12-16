@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f9a825;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://c4.wallpaperflare.com/wallpaper/502/540/1014/game-of-thrones-winter-is-coming-wallpaper-preview.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #111;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #f9a825;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #d9a123;
+}
+
+.about, .features {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2, .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p, .features p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.features .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.features .card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.features .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.features .card h3 {
+    margin: 15px 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .features .cards {
+        flex-direction: column;
+    }
+}
